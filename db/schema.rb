@@ -10,12 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101015105335) do
+ActiveRecord::Schema.define(:version => 20101015110813) do
 
   create_table "playlists", :force => true do |t|
     t.integer  "day"
     t.string   "creator"
     t.string   "mood"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "songs", :force => true do |t|
+    t.integer  "playlist_id"
+    t.string   "artist"
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
