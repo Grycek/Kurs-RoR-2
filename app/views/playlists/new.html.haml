@@ -4,7 +4,7 @@
     = f.text_field :creator
   %p
     Dzień:
-    =select_tag(:day, options_for_select(1..100) )
+    =f.select(:day, options_for_select(1..100) )
   %p
     Nastrój
     = f.text_field :mood

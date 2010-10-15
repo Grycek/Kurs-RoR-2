@@ -3,12 +3,13 @@ Task2::Application.routes.draw do
   get "playlists/show"
   get "playlists/new"
   get "songs/new"
+  root :to => "playlists#index"
   resources :playlists do
     resources :songs
   end
   resources :songs
   resources :playlists
-  root :to => "playlists#index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
