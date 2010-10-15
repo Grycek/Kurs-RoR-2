@@ -1,4 +1,14 @@
 Task2::Application.routes.draw do
+  get "songs/new"
+
+  get "songs/show"
+
+  get "songs/create"
+
+  get "playlists/index"
+
+  get "playlists/show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
