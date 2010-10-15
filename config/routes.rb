@@ -1,6 +1,4 @@
 Task2::Application.routes.draw do
-  
-
   resources :playlists do
     resources :songs
   end
