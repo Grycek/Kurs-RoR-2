@@ -8,7 +8,8 @@ Task2::Application.routes.draw do
   get "playlists/index"
 
   get "playlists/show"
-
+  
+  root :to => "playlists#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
