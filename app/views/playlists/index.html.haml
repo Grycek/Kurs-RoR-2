@@ -1,0 +1,12 @@
+%h1 Playlists
+- @playlists.each do |playlist|
+  %p
+    %b Dzień:
+    =playlist.day
+  %p
+    %b Autor:
+    =playlist.creator
+  %p
+    %b Nastrój:
+    =playlist.mood
+  %hr
